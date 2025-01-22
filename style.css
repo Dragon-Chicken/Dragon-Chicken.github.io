@@ -1,0 +1,31 @@
+html {
+  background-color: #282828;
+  color: #fbf1c7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 1em;
+  padding: 1em;
+}
+
+header {
+  width: auto;
+  height: auto;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  background-color: #3c3836;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  position: static;
+  padding: 1em;
+  background-color: #3c3836;
+}
