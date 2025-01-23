@@ -1,31 +1,51 @@
+/* I think this is everything */
 html {
   background-color: #282828;
   color: #fbf1c7;
 }
 
+/* body is like the root */
 body {
   margin: 0;
   padding: 0;
 }
 
-main {
-  margin: 1em;
-  padding: 1em;
-}
-
+/* the header (top bar) */
 header {
   width: auto;
-  height: auto;
+  height: 50px;
   position: sticky;
   top: 0;
   padding: 1em;
   background-color: #3c3836;
 }
 
+#logo {
+  font-size: 2em;
+}
+
+/* content that is in between the header and footer */
+main {
+  margin: 1em;
+  padding: 1em;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+/* the footer (bottom bar) */
 footer {
   width: auto;
-  height: auto;
-  position: static;
+  height: 107px;
   padding: 1em;
+  margin: 0;
   background-color: #3c3836;
+}
+
+/* links */
+a {
+  color: #d79921;
+  text-decoration: none;
 }
