@@ -31,17 +31,25 @@ main {
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  float: left;
+  width: 400px;
+  height: 400px;
+  padding: 0em 1em 1em 0em;
 }
 
 /* the footer (bottom bar) */
 footer {
+  clear: both;
   width: auto;
-  height: 107px;
+  height: auto;
   padding: 1em;
   margin: 0;
   background-color: #3c3836;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
 }
 
 /* links */
