@@ -1,40 +1,62 @@
 /* I think this is everything */
 html {
-  background-color: #282828;
+  background-color: #1d2021;
   color: #fbf1c7;
+  font: 1rem /1.5 monospace;
 }
 
 /* body is like the root */
 body {
   margin: 0;
   padding: 0;
+
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#page {
+  background-color: #282828;
+}
+
+@media (max-width: 1680px) {
+  #page {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1680px) {
+  #page {
+    width: 1680px;
+  }
 }
 
 /* the header (top bar) */
+/* both */
 header {
-  width: auto;
-  height: 50px;
   position: sticky;
   top: 0;
   padding: 1em;
   background-color: #3c3836;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
   font-size: 2em;
 }
 
+.menubtn {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* content that is in between the header and footer */
 main {
   margin: 1em;
   padding: 1em;
-}
-
-img {
-  float: left;
-  width: 400px;
-  height: 400px;
-  padding: 0em 1em 1em 0em;
 }
 
 /* the footer (bottom bar) */
@@ -52,7 +74,7 @@ footer p {
   padding: 0;
 }
 
-/* links */
+/* element selector */
 a {
   color: #d79921;
   text-decoration: none;
