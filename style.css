@@ -1,23 +1,37 @@
-/* I think this is everything */
+/* #########################################
+ * GLOBALS
+ * ######################################### */
+:root {
+  --bg1: #1d2021;
+  --bg2: #282828;
+  --bg3: #3c3836;
+  --font: #fbf1c7;
+  --link: #d79921;
+}
+
 html {
-  background-color: #1d2021;
-  color: #fbf1c7;
+  background-color: var(--bg1);
+  color: var(--font);
   font: 1rem /1.5 monospace;
 }
 
-/* body is like the root */
+/* #########################################
+ * BODY
+ * ######################################### */
 body {
   margin: 0;
   padding: 0;
 
-  height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/* #########################################
+ * "PAGE" STYLE
+ * ######################################### */
 #page {
-  background-color: #282828;
+  background-color: var(--bg2);
 }
 
 @media (max-width: 1680px) {
@@ -32,13 +46,14 @@ body {
   }
 }
 
-/* the header (top bar) */
-/* both */
+/* #########################################
+ * HEADER
+ * ######################################### */
 header {
   position: sticky;
   top: 0;
   padding: 1em;
-  background-color: #3c3836;
+  background-color: var(--bg3);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,25 +63,32 @@ header {
   font-size: 2em;
 }
 
-.menubtn {
-  width: 2rem;
-  height: 2rem;
+/* #########################################
+ * HEADER BUTTONS
+ * ######################################### */
+.headerbtn {
+  color: var(--link);
+  text-decoration: none;
 }
 
-/* content that is in between the header and footer */
+/* #########################################
+ * MAIN CONTENT
+ * ######################################### */
 main {
   margin: 1em;
   padding: 1em;
 }
 
-/* the footer (bottom bar) */
+/* #########################################
+ * FOOTER
+ * ######################################### */
 footer {
   clear: both;
   width: auto;
   height: auto;
   padding: 1em;
   margin: 0;
-  background-color: #3c3836;
+  background-color: var(--bg3);
 }
 
 footer p {
@@ -74,8 +96,31 @@ footer p {
   padding: 0;
 }
 
-/* element selector */
-a {
-  color: #d79921;
+/* #########################################
+ * PROJECT PAGE
+ * ######################################### */
+.projectsbox {
+  background-color: var(--bg3);
+  padding: 1em;
+  margin: 1em 0em;
+}
+.projectlink {
+  color: currentcolor;
   text-decoration: none;
+}
+.projectimg {
+  width: 10%;
+  height: 10%;
+  object-fit: contain;
+}
+
+/* #########################################
+ * ELEMENTS
+ * ######################################### */
+
+aside {
+  padding: 0.1em 1em;
+  background-color: var(--bg1);
+  font-style: italic;
+  opacity: 0.5;
 }
