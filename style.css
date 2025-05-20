@@ -34,15 +34,15 @@ body {
   background-color: var(--bg2);
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1080px) {
   #page {
     width: 100%;
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1080px) {
   #page {
-    width: 1680px;
+    width: 1080px;
   }
 }
 
@@ -117,10 +117,41 @@ footer p {
 /* #########################################
  * BLOGS PAGE
  * ######################################### */
-.blogimg {
-  width: 50em;
-  height: 30em;
+
+.blogpage img,
+.projectpage img {
+  /*width: 25em;
+  max-width: 90%;
+  height: 15em;
+  object-fit: contain;*/
+  
+  margin: 1em 0;
+  display: block;
+  width: 30em;
+  max-width: 90%;
+  /*height: 30em;*/
   object-fit: contain;
+}
+
+.date {
+  float: right;
+  padding: 0;
+  margin: 0;
+  text-align: end;
+  font-style: italic;
+}
+
+.blog img {
+  margin: 1em 0;
+  display: block;
+  width: 30em;
+  max-width: 90%;
+  /*height: 30em;*/
+  object-fit: contain;
+}
+
+.blog a {
+  color: var(--link);
 }
 
 /* #########################################
