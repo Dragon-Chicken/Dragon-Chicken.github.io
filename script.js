@@ -15,7 +15,7 @@ loadHTML("header", "/header.html");
 loadHTML("footer", "/footer.html");
 
 const observer = new MutationObserver((mutations) => {
-  const button = document.getElementById('hamburger');
+  /*const button = document.getElementById('hamburger');
   const paragraph = document.querySelector("#testing");
   
   if (button) {
@@ -34,7 +34,17 @@ const observer = new MutationObserver((mutations) => {
       button.value = "start x";
       paragraph.textContent = "x is stopped";
     }
-  }
+  }*/
 
+  const btn = document.getElementById("scrollToTopBtn");
+
+  function scrollToTop() {
+  // Scroll to top logic
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  btn.addEventListener("click", scrollToTop);
 });
 observer.observe(document.body, { childList: true, subtree: true });

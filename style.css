@@ -7,10 +7,11 @@
   --bg3: #3c3836;
   --font: #fbf1c7;
   --link: #d79921;
+  --grad1: linear-gradient();
 }
 
 html {
-  background-color: var(--bg1);
+  background-color: var(--bg2);
   color: var(--font);
   font: 1rem /1.5 monospace;
 }
@@ -50,10 +51,11 @@ body {
  * HEADER
  * ######################################### */
 header {
-  position: sticky;
-  top: 0;
+  background-color: var(--bg2);
+}
+
+header > div {
   padding: 1em;
-  background-color: var(--bg3);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,29 +73,63 @@ header {
   text-decoration: none;
 }
 
+#logoimg {
+  padding: 0;
+  margin: 0;
+  width: 1.5em;
+  height: 1.5em;
+}
+
 /* #########################################
  * MAIN CONTENT
  * ######################################### */
 main {
-  margin: 1em;
+  margin: 1em 5em;
   padding: 1em;
+}
+
+@media (max-width: 40em) {
+  main {
+    margin: 1em 0em;
+  }
 }
 
 /* #########################################
  * FOOTER
  * ######################################### */
 footer {
+  background-color: var(--bg2);
+}
+
+footer > div {
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*footer > div{
   clear: both;
   width: auto;
   height: auto;
   padding: 1em;
   margin: 0;
-  background-color: var(--bg3);
-}
+}*/
 
 footer p {
   margin: 0;
   padding: 0;
+}
+
+#scrollToTopBtn {
+  color: var(--link);
+  background-color: var(--bg2);
+  border-radius: 4px;
+  border: none;
+}
+#scrollToTopBtn:hover {
+  background-color: var(--bg3);
 }
 
 /* #########################################
@@ -129,7 +165,6 @@ footer p {
   display: block;
   width: 30em;
   max-width: 90%;
-  /*height: 30em;*/
   object-fit: contain;
 }
 
@@ -146,12 +181,19 @@ footer p {
   display: block;
   width: 30em;
   max-width: 90%;
-  /*height: 30em;*/
   object-fit: contain;
 }
 
-.blog a {
-  color: var(--link);
+/* #########################################
+ * IMAGE FORMATS
+ * ######################################### */
+
+.blog .square-image {
+  width: 30em;
+  max-width: 90%;
+  height: 30em;
+  max-height: 90%;
+  object-fit: cover;
 }
 
 /* #########################################
@@ -163,4 +205,17 @@ aside {
   background-color: var(--bg1);
   font-style: italic;
   opacity: 0.5;
+}
+
+a {
+  color: var(--link);
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 2px;
+  color: var(--bg3);
+  background-color: var(--bg3);
 }
