@@ -1,18 +1,28 @@
 /* #########################################
  * GLOBALS
  * ######################################### */
-:root {
+/*:root {
   --bg1: #1d2021;
   --bg2: #282828;
   --bg3: #3c3836;
   --font: #fbf1c7;
   --link: #d79921;
   --grad1: linear-gradient();
+}*/
+
+:root {
+  /* bg1 darkest, bg2 normal bg, bg3 light bg */
+  --bg1: #aaa;
+  --bg2: #ffffff;
+  --bg3: #ffffff;
+  --text: #000;
+  --link: #66a;
+  --grad1: linear-gradient();
 }
 
 html {
   background-color: var(--bg2);
-  color: var(--font);
+  color: var(--text);
   font: 1rem /1.5 monospace;
 }
 
